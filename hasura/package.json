@@ -1,0 +1,14 @@
+{
+  "name": "hasura",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "docker-compose up",
+    "down": "docker-compose down",
+    "console": "hasura console",
+    "metadata": "hasura metadata apply",
+    "migrate": "hasura migrate apply",
+    "seed": "hasura seeds apply"
+  }
+}
