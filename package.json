@@ -23,12 +23,12 @@
   "scripts": {
     "step-1": "docker ps",
     "step0:hasura": "yarn hasura:up",
+    "step1:hasura-console": "yarn hasura:console",
     "step2:migrate": "yarn hasura:migrate",
     "step3:metadata": "yarn hasura:metadata",
     "step3-5:seed": "yarn hasura:seed",
     "step4:browser-start": "yarn workspace browser start",
     "step5:browser-codegen": "yarn workspace browser codegen",
-    "step6:hasura:console": "yarn hasura:console",
     "apolloServer:start:dev": "yarn workspace apolloServer start:dev",
     "apolloServer:codegen-introspect:apollo-from-hasura": "yarn workspace apolloServer codegen-introspect:apollo-from-hasura",
     "codegen-apollo-server:watch": "yarn workspace apolloServer codegen-apollo-server:watch",

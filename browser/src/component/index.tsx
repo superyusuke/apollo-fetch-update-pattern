@@ -7,7 +7,6 @@ gql`
   query useTest {
     test {
       id
-      name
     }
   }
 `;
