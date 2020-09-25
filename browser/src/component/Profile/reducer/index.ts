@@ -29,7 +29,10 @@ export const makeReducer = () => (state: State, action: Action): State => {
   }
 
   if (action.type === "setUserProfile") {
-    return state;
+    return {
+      ...state,
+      userProfile: action.payload.userProfile,
+    };
   }
 
   return state;
