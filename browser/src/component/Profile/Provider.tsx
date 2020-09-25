@@ -28,15 +28,16 @@ gql`
 type ContextType = {
   state: State;
   setState: Dispatch<Action>;
-  fetchedData: FetchedData;
   // fixme 型が適当だがさしあたってこれでなんとかなる
   refetch: () => Promise<any>;
+  fetchedData: FetchedData;
 };
 
 const Context = createContext<ContextType>({
   setState: () => {},
   state: {
     userProfile: "",
+    fetchedData: null,
   },
   fetchedData: (null as unknown) as FetchedData,
   refetch: async () => {},
@@ -54,6 +55,7 @@ export const Provider: FC = (props) => {
 
   const [state, setState] = useReducer(makeReducer(), {
     userProfile: "",
+    fetchedData: null,
   });
 
   // データが取得できない場合は、レンダリングしないパターンで今回は実装
