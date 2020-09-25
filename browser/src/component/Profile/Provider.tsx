@@ -51,6 +51,10 @@ export const Provider: FC = (props) => {
   // ここでデータをフェッチ
   const { data, refetch } = useUserInfoQuery({
     variables: { userId },
+    onCompleted({ user_by_pk }) {
+      // ここで状態をセットすればいいと思いきや
+      // refetch 時には実行されないので問題がある
+    },
   });
 
   const [state, setState] = useReducer(makeReducer(), {
