@@ -1,5 +1,14 @@
+import { FetchedData } from "src/component/Profile/Provider";
+
 export type State = {
   userProfile: string;
+};
+
+type SetFetchedData = {
+  type: "setFetchedData";
+  payload: {
+    fetchedData: FetchedData;
+  };
 };
 
 type SetUserProfile = {
@@ -9,9 +18,16 @@ type SetUserProfile = {
   };
 };
 
-export type Action = SetUserProfile;
+export type Action = SetUserProfile | SetFetchedData;
 
 export const makeReducer = () => (state: State, action: Action): State => {
+  if (action.type === "setFetchedData") {
+    return {
+      ...state,
+      userProfile: action.payload.fetchedData.profile,
+    };
+  }
+
   if (action.type === "setUserProfile") {
     return state;
   }
