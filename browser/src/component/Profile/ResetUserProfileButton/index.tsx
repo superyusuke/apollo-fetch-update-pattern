@@ -24,5 +24,5 @@ export const ResetUserProfileButton = () => {
     });
   };
 
-  return <button onClick={clickHandler}>userProfile を update する</button>;
+  return <button onClick={clickHandler}>userProfile を reset する</button>;
 };
