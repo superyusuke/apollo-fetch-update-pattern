@@ -16,7 +16,7 @@ gql`
 `;
 
 export const UpdateUserProfileButton = () => {
-  const { state, setState, fetchedData, refetch } = useContextHook();
+  const { state, refetch } = useContextHook();
 
   const [mutation] = useUpdateUserProfileMutation({
     variables: {

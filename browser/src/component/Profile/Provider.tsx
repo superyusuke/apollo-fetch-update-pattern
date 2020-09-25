@@ -23,6 +23,7 @@ gql`
     }
   }
 `;
+// fetch 系
 
 type ContextType = {
   state: State;

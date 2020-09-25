@@ -1,14 +1,14 @@
 import React from "react";
 import { Provider } from "src/component/Profile/Provider";
-import { Container } from "src/component/Profile/Container";
+import { Setter } from "src/component/Profile/Setter";
 import { ProfileUI } from "src/component/Profile/UI";
 
 export const Profile = () => {
   return (
     <Provider>
-      <Container>
+      <Setter>
         <ProfileUI />
-      </Container>
+      </Setter>
     </Provider>
   );
 };
