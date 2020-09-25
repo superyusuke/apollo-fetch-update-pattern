@@ -34,6 +34,6 @@
     "hasura:migrate": "yarn workspace hasura migrate",
     "hasura:metadata": "yarn workspace hasura metadata",
     "hasura:seed": "yarn workspace hasura seed",
-    "hasura:console": "yarn workspace hasura console",
+    "hasura:console": "yarn workspace hasura console"
   }
 }
