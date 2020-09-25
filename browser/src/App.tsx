@@ -2,12 +2,12 @@ import React from "react";
 
 import { ApolloWrapper } from "src/ApolloWrapper";
 
-import { Index } from "src/component";
+import { Profile } from "src/component/Profile";
 
 export const App = () => {
   return (
     <ApolloWrapper>
-      <Index />
+      <Profile />
     </ApolloWrapper>
   );
 };
