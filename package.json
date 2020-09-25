@@ -29,15 +29,11 @@
     "step3-5:seed": "yarn hasura:seed",
     "step4:browser-start": "yarn workspace browser start",
     "step5:browser-codegen": "yarn workspace browser codegen",
-    "apolloServer:start:dev": "yarn workspace apolloServer start:dev",
-    "apolloServer:codegen-introspect:apollo-from-hasura": "yarn workspace apolloServer codegen-introspect:apollo-from-hasura",
-    "codegen-apollo-server:watch": "yarn workspace apolloServer codegen-apollo-server:watch",
     "hasura:up": "yarn workspace hasura start",
     "hasura:down": "yarn workspace hasura down",
     "hasura:migrate": "yarn workspace hasura migrate",
     "hasura:metadata": "yarn workspace hasura metadata",
     "hasura:seed": "yarn workspace hasura seed",
     "hasura:console": "yarn workspace hasura console",
-    "vercel": "yarn workspace apolloServer vercel"
   }
 }
